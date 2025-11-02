@@ -18,7 +18,7 @@ const projects = [
     description:
       "Full web platform for a Hair studio — bookings, services, blog and CRM integration.",
     img: "/images/2.png",
-    link: "https://pure-luxe-preview.lovable.app/?utm_source=lovable-editor",
+    link: "https://restaurant-alexdev.netlify.app/",
     tech: ["React", "Firebase", "Framer Motion"],
   },
   {
