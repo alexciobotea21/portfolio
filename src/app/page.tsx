@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import CustomCursor from "@/components/CustomCursor";
 import BackgroundOrbs from "@/components/BackgroundOrbs";
-import LenisProvider from "@/components/LenisProvider";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 import PortfolioSection from "@/components/PortfolioSection";
@@ -12,7 +11,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <LenisProvider>
+    <>
       <CustomCursor />
       <BackgroundOrbs />
       <Navbar />
@@ -22,6 +21,6 @@ export default function Home() {
       <PortfolioSection />
       <ContactSection />
       <Footer />
-    </LenisProvider>
+    </>
   );
 }
