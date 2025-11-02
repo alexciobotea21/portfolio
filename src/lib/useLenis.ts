@@ -19,10 +19,14 @@ export default function useLenis() {
     const hasPrecisionPointer = window.matchMedia("(pointer: fine)").matches;
 
     const lenis = new Lenis({
-      duration: hasPrecisionPointer ? 0.55 : 0.4,
-      lerp: hasPrecisionPointer ? 0.08 : 0.12,
+      duration: hasPrecisionPointer ? 0.25 : 0.45,
+      lerp: hasPrecisionPointer ? 0.24 : 0.12,
       smoothWheel: true,
-      easing: (t) => 1 - Math.pow(1 - t, 3),
+      syncTouch: !hasPrecisionPointer,
+      syncTouchLerp: 0.08,
+      wheelMultiplier: hasPrecisionPointer ? 1.05 : 0.9,
+      touchMultiplier: 0.9,
+      easing: (t) => t,
     });
 
     let animationFrame = 0;
