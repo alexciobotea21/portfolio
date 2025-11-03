@@ -18,15 +18,15 @@ const projects = [
     description:
       "Full web platform for a Hair studio — bookings, services, blog and CRM integration.",
     img: "/images/2.png",
-    link: "https://restaurant-alexdev.netlify.app/",
+    link: "https://hairsalon-alexdev.netlify.app/",
     tech: ["React", "Firebase", "Framer Motion"],
   },
   {
     title: "Restaurant Website",
     description: "Luxurious Restaurant Experience Site.",
     img: "/images/3.png",
-    link: "https://midnight-bistro.lovable.app/?utm_source=lovable-editor",
-    tech: ["Node.js", "React", "OpenAI API"],
+    link: "https://restaurant-alexdev.netlify.app/",
+    tech: ["Node.js", "React", "Tailwind"],
   },
 ];
 
